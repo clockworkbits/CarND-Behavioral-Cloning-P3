@@ -12,7 +12,7 @@ The goals / steps of this project are the following:
 
 [center_lane]: ./images/center_lane.png "Center lane driving"
 [center_lane_flipped]: ./images/center_lane_flipped.png "Center lane driving. (Image flipped horizontally)"
-[data_udacity]: ./examples/placeholder.png "Udacity data distrubution"
+[data_udacity]: ./images/udacity_data_distribution.png "Udacity data distrubution"
 [data_original]: ./images/initial_data_distribution.png "Distribution of my own data"
 [data_dropped]: ./images/dropped_data_distribution.png "Distribution of my own data where half of the samples for steering angle close to 0 is dropped"
 
