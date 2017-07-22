@@ -44,23 +44,23 @@ The model.py file contains the code for training and saving the convolution neur
 
 #### 1. An appropriate model architecture has been employed
 
-My model consists of a convolution neural network with 5x5 filter sizes and depth of size 6 (model.py lines 68 and 70) 
+My model consists of a convolution neural network with 5x5 filter sizes and depth of size 6 (model.py lines 84 and 86) 
 
 After each convolutional layer there is the max pooling layer of 2x2 size.
 
-The model includes RELU layers to introduce nonlinearity (code lines 68 and 70), and the data is normalized in the model using a Keras lambda layer (code line 67).
+The model includes RELU layers to introduce nonlinearity (code lines 84 and 86), and the data is normalized in the model using a Keras lambda layer (code line 83).
 
-The confolutional layers are followed by two fully connected layers of size 120, 84 and the output layer of size 1. (lines 73, 75 and 77 respectievly).
+The confolutional layers are followed by two fully connected layers of size 120, 84 and the output layer of size 1. (lines 89, 91 and 93 respectievly).
 
 #### 2. Attempts to reduce overfitting in the model
 
-The model contains dropout layers between the fully connected layers in order to reduce overfitting (model.py lines 74 and 76). 
+The model contains dropout layers between the fully connected layers in order to reduce overfitting (model.py lines 90 and 92). 
 
-The model was trained and validated on different data sets to ensure that the model was not overfitting (code lines 78-79). The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
+The model was trained and validated on different data sets to ensure that the model was not overfitting (code lines 95-98). The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
 
 #### 3. Model parameter tuning
 
-The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 79).
+The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 95).
 
 #### 4. Appropriate training data
 
@@ -94,7 +94,7 @@ The initial distribution looked like in the chart below
 
 ![data_original]
 
-The distribution looks like the standard distribution, but the there is about twice as much data for the car going stright. To battle that I decided to randomly drop 50% of the samples from the initial set (lines 26-28 in model.py). After this operation the charts looks like below and it is quite close to Guassian distribution.
+The distribution looks like the standard distribution, but the there is about twice as much data for the car going stright. To battle that I decided to randomly drop 50% of the samples from the initial set (lines 24-25 in model.py). After this operation the charts looks like below and it is quite close to Guassian distribution.
 
 ![data_dropped]
 
@@ -102,7 +102,7 @@ At the end of the process, the vehicle is able to drive autonomously around the 
 
 #### 2. Final Model Architecture
 
-The final model architecture (model.py lines 65-77) consisted of a convolution neural network with the following layers and layer sizes.
+The final model architecture (model.py lines 81-93) consisted of a convolution neural network with the following layers and layer sizes.
 
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
